@@ -5,7 +5,7 @@ submission:
   # Generate your label following way to avoid
   # overlapping codes among submissions:
   # [Last name of corresponding author]_[Abbreviation of institute of the corresponding author]_task[task number]_[index number of your submission (1-4)]
-  label: Farrugia_IMT-Alantique_BRAIn_task1b_2
+  label: Farrugia_IMT-Atlantique-BRAIn_task1b_2
 
   # Submission name
   # This name will be used in the results tables when space permits
@@ -83,8 +83,8 @@ system:
 
     # Data augmentation methods
     # e.g. mixup, time stretching, block mixing, pitch shifting, ...
-    data_augmentation: temporal masking, filtering
-
+    data_augmentation: temporal masking, filtering, additive noise
+    
     # Machine learning
     # In case using ensemble methods, please specify all methods used (comma separated list).
     # one or multiple, e.g. GMM, HMM, SVM, MLP, CNN, RNN, CRNN, ResNet, ensemble, ...
@@ -132,10 +132,18 @@ system:
 
   # List of external datasets used in the submission.
   # Development dataset is used here only as example, list only external datasets
-  external_datasets: !null
+  external_datasets: 
+      # Dataset name
+    - name: TAU Urban Acoustic Scenes 2019, Development dataset
+
+      # Dataset access url
+      url: https://doi.org/10.5281/zenodo.2589280
+
+      # Total audio length in minutes
+      total_audio_length: 2400            # minutess
 
   # URL to the source code of the system [optional]
-  source_code: !null
+  source_code: github.com/brain-bzh/dcase-2020-task1-subtaskB
 
 # System results
 results:
@@ -154,11 +162,11 @@ results:
     # Class-wise accuracies
     class_wise:
       indoor:
-        accuracy: 85.1
+        accuracy: 84.6
         logloss: 0.356
       outdoor:
-        accuracy: 94.2
+        accuracy: 94.4
         logloss: 0.246
       transportation:
-        accuracy: 93.1
+        accuracy: 93.2
         logloss: 0.270

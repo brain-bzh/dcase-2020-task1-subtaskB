@@ -5,7 +5,7 @@ submission:
   # Generate your label following way to avoid
   # overlapping codes among submissions:
   # [Last name of corresponding author]_[Abbreviation of institute of the corresponding author]_task[task number]_[index number of your submission (1-4)]
-  label: Farrugia_IMT-Alantique_BRAIn_task1b_1
+  label: Farrugia_IMT-Atlantique-BRAIn_task1b_1
 
   # Submission name
   # This name will be used in the results tables when space permits
@@ -83,7 +83,7 @@ system:
 
     # Data augmentation methods
     # e.g. mixup, time stretching, block mixing, pitch shifting, ...
-    data_augmentation: temporal masking, filtering
+    data_augmentation: temporal masking, filtering, additive noise
 
     # Machine learning
     # In case using ensemble methods, please specify all methods used (comma separated list).
@@ -105,7 +105,7 @@ system:
 
     # Method for handling the complexity restrictions
     # e.g. weight quantization, sparsity, ...
-    complexity_management: weight quantization, sparsity
+    complexity_management: weight quantization, pruning
 
   # System complexity, meta data provided here will be used to evaluate
   # submitted systems from the computational load perspective.
@@ -132,10 +132,16 @@ system:
 
   # List of external datasets used in the submission.
   # Development dataset is used here only as example, list only external datasets
-  external_datasets: !null
+  external_datasets:
+    - name: TAU Urban Acoustic Scenes 2020 3Class, Development dataset
 
-  # URL to the source code of the system [optional]
-  source_code: !null
+      # Dataset access url
+      url: https://doi.org/10.5281/zenodo.3670185
+
+      # Total audio length in minutes
+      total_audio_length: 2400            # minutes
+    
+  source_code: github.com/brain-bzh/dcase-2020-task1-subtaskB
 
 # System results
 results:
@@ -154,11 +160,11 @@ results:
     # Class-wise accuracies
     class_wise:
       indoor:
-        accuracy: 84.4
+        accuracy: 83.8
         logloss: 0.533
       outdoor:
-        accuracy: 91.2
+        accuracy: 90.9
         logloss: 0.273
       transportation:
-        accuracy: 87.5
+        accuracy: 87.4
         logloss: 0.294
