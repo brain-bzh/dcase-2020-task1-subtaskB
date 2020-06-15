@@ -1,0 +1,44 @@
+python reload_model.py --trained_model_path="bestmodels/ResNet333_pruned2_20200612_020221_testAcc=0.9125.pth" --model_type="ModelD" --pruner_mode="resnet"
+
+Test stats -  Loss: 0.2692 Acc: 91.23%
+Inference on Testset complete in 158.5s
+
+                precision    recall  f1-score   support
+
+       outdoor       0.93      0.94      0.94      1604
+        indoor       0.88      0.86      0.87      1297
+transportation       0.92      0.93      0.92      1284
+
+      accuracy                           0.91      4185
+     macro avg       0.91      0.91      0.91      4185
+  weighted avg       0.91      0.91      0.91      4185
+
+
+Class: outdoor
+CE: 0.18213478050327064
+
+Class: indoor
+CE: 0.38416502341547654
+
+Class: transportation
+CE: 0.26179627391779536
+
+Total CE: 0.2691882052586782
+
+Total CE (sanity check): 0.2691882052586782
+
+=============================================
+
+Global sparsity: 35.84%
+
+Total non-zero params (with batchNorm): 239781
+
+Total non-zero params (without batchNorm): 238896
+
+Total number of parameters: 373696
+
+Model size (with batchNorm): 468.3KB
+
+Model size (without batchNorm): 466.6KB
+
+=============================================

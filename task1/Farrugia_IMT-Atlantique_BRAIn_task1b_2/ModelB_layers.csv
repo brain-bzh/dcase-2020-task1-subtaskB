@@ -1,0 +1,12 @@
+,name,params,nzparams,sparsity,skip_count
+0,conv1,2048,2048,0.0,False
+1,bn1,16,16,0.0,True
+2,conv2,1024,1024,0.0,False
+3,bn2,16,16,0.0,True
+4,conv3,2048,2048,0.0,False
+5,bn3,32,32,0.0,True
+6,conv4,8192,8192,0.0,False
+7,bn4,64,64,0.0,True
+8,conv5,16384,16384,0.0,False
+9,bn5,64,64,0.0,True
+10,fc1,192,192,0.0,False

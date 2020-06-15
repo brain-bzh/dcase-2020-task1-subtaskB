@@ -1,0 +1,41 @@
+<<<<<<< HEAD
+python3 reload_model.py --trained_model_path="models/4_20200614-105023VGG_1D_trained_testAcc=0.9111.pth" --model_type="ModelB" --pruner_mode="vgg5"
+
+Test stats -  Loss: 0.3946 Acc: 91.02%
+Inference on Testset complete in 10.8s
+
+                precision    recall  f1-score   support
+
+       outdoor       0.94      0.94      0.94      1604
+        indoor       0.87      0.86      0.87      1297
+transportation       0.92      0.92      0.92      1284
+
+      accuracy                           0.91      4185
+     macro avg       0.91      0.91      0.91      4185
+  weighted avg       0.91      0.91      0.91      4185
+
+
+Class: outdoor
+CE: 0.21881181105711217
+
+Class: indoor
+CE: 0.6366620582162921
+
+Class: transportation
+CE: 0.34516185763468993
+
+Total CE: 0.38707590433574207
+
+Total CE (sanity check): 0.38707590433574207
+
+Global sparsity: 0.00%
+
+Total non-zero params (with batchNorm): 30080
+
+Total non-zero params (without batchNorm): 29888
+
+Total number of parameters: 30080
+
+Model size (with batchNorm): 58.8KB
+
+Model size (without batchNorm): 58.4KB
