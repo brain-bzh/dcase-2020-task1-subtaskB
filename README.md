@@ -24,7 +24,7 @@ Code is based on pytorch (1.5), sklearn, pandas, numpy, scipy.
 
 Pretrained models 
 --
-Pretrained models will be uploaded after the challenge results annoucement.
+Pretrained models will be uploaded after the challenge deadline.
 
 Team members
 --
