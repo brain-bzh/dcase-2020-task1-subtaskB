@@ -14,9 +14,15 @@ For each of the four submitted model :
 
 Code
 --
-Training, pruning, finetuning and quantization code will be uploaded in the next days. 
+Pytorch code for training, pruning, finetuning and quantization code will be uploaded in the next days. 
 
 For now we provide the script that was used to [resample the dataset to 18 kHz](resample.py).
+
+Code is based on pytorch (1.5), sklearn, pandas, numpy, scipy.
+
+Pretrained models 
+--
+Pretrained models will be uploaded soon.
 
 Team members
 --
