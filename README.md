@@ -2,14 +2,21 @@
 
 This repository includes our metadata and code for the submission of IMT Atlantique - BRAIN to the DCASE 2020 challenge, Task 1, subtask B.
 
-Contents
+Metadata
 --
+
 For each of the four submitted model : 
 
 - metadata of our submissions in yaml files
 - Detailed parameter counts, layer-wise (Model_X.csv)
 - Detailed loss per category and summary of pruning (log_modelX.txt)
 
+
+Code
+--
+Training, pruning, finetuning and quantization code will be uploaded in the next days. 
+
+For now we provide the script that was used to [resample the dataset to 18 kHz](resample.py).
 
 Team members
 --
