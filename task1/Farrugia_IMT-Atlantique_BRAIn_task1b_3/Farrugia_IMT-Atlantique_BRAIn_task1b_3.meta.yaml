@@ -47,7 +47,7 @@ submission:
         location: Brest, France
 
     # Third author
-    - lastname: Farriugia
+    - lastname: Farrugia
       firstname: Nicolas
       email: nicolas.farrugia@imt-atlantique.fr
       corresponding: true  
