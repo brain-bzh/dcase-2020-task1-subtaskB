@@ -148,17 +148,17 @@ results:
 
     # Overall metrics
     overall:
-      accuracy: 91.0
-      logloss: 0.395
+      accuracy: 90.9
+      logloss: 0.288
 
     # Class-wise accuracies
     class_wise:
       indoor:
-        accuracy: 87.1
-        logloss: 0.637
+        accuracy: 85.1
+        logloss: 0.356
       outdoor:
         accuracy: 94.2
-        logloss: 0.219
+        logloss: 0.246
       transportation:
-        accuracy: 92.1
-        logloss: 0.345
+        accuracy: 93.1
+        logloss: 0.270
