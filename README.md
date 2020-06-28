@@ -27,9 +27,9 @@ Code is based on pytorch (1.5), sklearn, pandas, numpy, scipy.
 Dataset from TAU 2020 DCASE subtask B can be download at [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3670185.svg)](https://doi.org/10.5281/zenodo.3670185)
 
 To resample run,
-'''
+```
 python resample.py --URL_sound [path dataset] --URL_out [save path]
-'''
+```
 
 Pretrained models 
 --
