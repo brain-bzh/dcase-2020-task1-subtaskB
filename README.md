@@ -24,7 +24,7 @@ For now we provide :
 Code is based on pytorch (1.5), sklearn, pandas, numpy, scipy.
 
 ### Resample at 18 kHz
-Dataset from TAU 2020 DCASE subtask B can be download at [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3670185.svg)](https://doi.org/10.5281/zenodo.3670185)
+Dataset from TAU Urban Acoustic Scenes 2020 3Class can be download at [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3670185.svg)](https://doi.org/10.5281/zenodo.3670185)
 
 To resample run,
 ```
