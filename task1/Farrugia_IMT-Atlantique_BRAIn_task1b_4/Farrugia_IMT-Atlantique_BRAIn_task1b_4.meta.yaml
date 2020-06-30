@@ -132,12 +132,11 @@ system:
 
   # List of external datasets used in the submission.
   # Development dataset is used here only as example, list only external datasets
-  external_datasets: 
-      # Dataset name
-    - name: TAU Urban Acoustic Scenes 2019, Development dataset
+  external_datasets:
+    - name: TAU Urban Acoustic Scenes 2020 3Class, Development dataset
 
       # Dataset access url
-      url: https://doi.org/10.5281/zenodo.2589280
+      url: https://doi.org/10.5281/zenodo.3670185
 
       # Total audio length in minutes
       total_audio_length: 2400            # minutes
