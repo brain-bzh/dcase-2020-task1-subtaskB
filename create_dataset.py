@@ -85,7 +85,7 @@ class DCASEDataset(Dataset):
 
         # HP&LP
         transition = 300
-        cutoff = [500, 1000, 2000, 4000, 1500]
+        cutoff = [340, 1000, 2000, 4000, 1500]
         size = 200
         for i, k in enumerate(cutoff):
             params = [0, k, k + transition, self.sr/2]
@@ -95,7 +95,7 @@ class DCASEDataset(Dataset):
 
         # BP
         transition = 300
-        cutoff = [[500,2000], [340, 3400], [1200, 4000], [700,2500]]
+        cutoff = [[340, 3400], [1200, 3400]]
         size = 200
         for i, band in enumerate(cutoff):
             params = [0, band[0] - transition, band[0], band[1], band[1] + transition, self.sr/2]
