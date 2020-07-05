@@ -1,7 +1,7 @@
 # dcase-2020-task1-subtaskB
 
 This repository includes our metadata and code for the submission of IMT Atlantique - BRAIN to the DCASE 2020 challenge, Task 1, subtask B. 
-Our technical report is [here](Farrugia_IMT-Atlantique-BRAIn_task1_technical_report.pdf)
+Our technical report is [here](Pajusco_Huang_Farrugia_Workshop_DCASE.pdf)
 
 Metadata
 --
