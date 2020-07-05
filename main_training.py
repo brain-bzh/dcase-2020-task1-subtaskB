@@ -312,7 +312,7 @@ if __name__ == "__main__":
     ### Training ###
     model, history_training = train_model(model=model, hist=history_training, criterion=criterion, 
                                           optimizer=optimizer, dataloaders=dataloaders, dataset_sizes=dataset_sizes, 
-                                          data_augment=DATA_AUGMENT, scheduler=lr_sched, num_epochs=EPOCHS)
+                                          data_augment=DATA_AUGMENT, scheduler=lr_sched, num_epochs=EPOCHS, patience_es= 15)
 
 
     ### Testing ###
